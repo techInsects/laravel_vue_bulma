@@ -63605,8 +63605,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /media/curiosityx/Work/workspace/laravel_5.8_bulma/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /media/curiosityx/Work/workspace/laravel_5.8_bulma/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/curiosityx/laravel/laravel_vue_bulma/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/curiosityx/laravel/laravel_vue_bulma/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

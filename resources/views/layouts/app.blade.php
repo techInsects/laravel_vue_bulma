@@ -73,16 +73,22 @@
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
-              </a>
+          @auth
+            <figure class="image">
+              <img class="is-rounded" src="https://place-hold.it/45x45?text=User" alt="{{ Auth()->User()->name }}">
+            </figure>
+          @else
+            <div class="navbar-item">
+              <div class="buttons">
+                <a href="{{ route('register') }}" class="button is-primary">
+                  <strong>Register</strong>
+                </a>
+                <a href="{{ route('login') }}" class="button is-light">
+                  Log in
+                </a>
+              </div>
             </div>
-          </div>
+          @endauth
         </div>
       </div>
     </nav>
