@@ -1,26 +1,49 @@
 <h1 align="center">Laravel Vue Bulma</h1>
 
-## About Package
+### About Package
 
 Laravel Vue Bulma Package provides pre-installed laravel 5.8, vue.js and bulma
 plus there are many other packages which you can use to boost your development.
 
-- QR Code generator [bacon/bacon-qr-code](https://laravel.com/docs/routing).
-- Laravel Collective [laravelcollective/html](https://laravel.com/docs/container).
-- Calendar Package for events [maddhatter/laravel-fullcalendar](https://laravel.com/docs/session).
-- Flashy Package [mercuryseries/flashy](https://laravel.com/docs/eloquent).
-- Google Two Factor Authentication [pragmarx/google2fa-laravel](https://laravel.com/docs/migrations).
-- PRedis for event Broadcasting [predis/predis](https://laravel.com/docs/queues).
+- QR Code generator [bacon/bacon-qr-code](https://github.com/Bacon/BaconQrCode).
+- Laravel Collective [laravelcollective/html](https://laravelcollective.com).
+- Calendar Package for events [maddhatter/laravel-fullcalendar](https://github.com/maddhatter/laravel-fullcalendar).
+- Flashy Package [mercuryseries/flashy](https://github.com/mercuryseries/flashy).
+- Google Two Factor Authentication [pragmarx/google2fa-laravel](https://github.com/antonioribeiro/google2fa-laravel).
+- Countries [pragmarx/countries-laravel](https://github.com/antonioribeiro/countries-laravel).
+- PRedis for Event Broadcasting [predis/predis](https://github.com/nrk/predis).
+
+### Front-End Packages
+- [Vue.js](https://vuejs.org/)
+- [Bulma](https://bulma.io/)
+- [Font Awesome](https://fontawesome.com/)
+- [Laravel Echo](https://www.npmjs.com/package/laravel-echo)
+- [Moment.js](https://momentjs.com/)
+- [Socket.io](https://www.npmjs.com/package/socket.io)
+- [Sweet Alert](https://sweetalert.js.org/guides/)
+- [Vue Star Rating](https://www.npmjs.com/package/vue-star-rating)
+
 
 Use this boilerplate and build something amazing.
 
-## Learning Laravel
+### 5 Steps Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+ clone project
+`git clone https://github.com/techInsects/laravel_vue_bulma`
+ 
+ go to project folder and install composer dependencies
+`composer install`
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost you and your team's skills by digging into our comprehensive video library.
+ now install node dependencies
+`npm install`
 
-## Pre-Developed Pages
+ compile installed packages
+`npm run dev`
+
+ run migrations
+`php artisan migrate`
+
+### Pre-Developed Pages
 
 Given below pages have been developed and added to the package.
 
@@ -33,14 +56,14 @@ Given below pages have been developed and added to the package.
 - Password Reset Email [auth/passwords/email.blade.php]
 - Password Reset [auth/passwords/reset.blade.php]
 
-## Contributing
+### Contributing
 
 Thank you for considering contributing to the laravel_vue_bulma Package! The contribution guide can be found in the [TechInsects Contribution Guide](https://techinsects.com/contributions).
 
-## Security Vulnerabilities
+### Security Vulnerabilities
 
 If you discover a security vulnerability within laravel_vue_bulma, please send an e-mail to TechInsects via [devs@techinsects.com](mailto:dev@techinsects.com). All security vulnerabilities will be promptly addressed.
 
-## License
+### License
 
 The package is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
