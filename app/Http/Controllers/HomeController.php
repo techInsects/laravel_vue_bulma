@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use PragmaRX\Countries\Package\Countries;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $country = Countries::where('name.common', 'Pakistan')->first();
+
+        return view('home', compact('country'));
+    }
+
+    public function search_country()
+    {
+        $keyword = request()->input('keyword');
+
+        $country = Countries::where('name.common','like', '%'.$keyword.'%')->first();
+        return $country;
+        return view('home', compact('country'));
     }
 }
